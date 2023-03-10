@@ -1,0 +1,39 @@
+body{
+    /* background-color: palevioletred; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.main{
+    width: 60%;
+    margin: 0 auto;
+}
+.bayan-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bayan-{
+
+}
+
+.bayan-element{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    border: 0.2em solid black;
+}
+
+.bayan-header{
+    background-color: aqua;
+    cursor: pointer;
+}
+.logo{
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.bayan-header .header{
+    margin-left: 2%;
+}
+
+
