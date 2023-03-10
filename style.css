@@ -1,5 +1,4 @@
 body{
-    /* background-color: palevioletred; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
@@ -34,6 +33,28 @@ body{
 
 .bayan-header .header{
     margin-left: 2%;
+}
+
+.bayan-img {
+    display: none;
+}
+
+#cat1:target,
+#cat2:target,
+#cat3:target,
+#cat4:target {
+  display: block;
+}
+
+#cat1:hover,
+#cat2:hover,
+#cat3:hover,
+#cat4:hover {
+  display: block;
+}
+
+.bayan-element:hover .bayan-img{
+    display: block;
 }
 
 
