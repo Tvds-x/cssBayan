@@ -28,6 +28,7 @@ body{
     flex-direction: column;
     border: 0.2em solid rgb(106, 31, 31);
     margin-bottom: 1em;
+    border-radius: 1em;
 }
 
 .bayan-header{
@@ -45,8 +46,11 @@ body{
 }
 
 .bayan-img {
-    display: none;
-    border-radius: 5%;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    transition: all 0.3s ease-in-out;
 }
 
 .xmark{
@@ -61,12 +65,11 @@ body{
 #cat2:target,
 #cat3:target,
 #cat4:target {
-  display: block;
+    max-height: 100vh;
 }
 
-
 .bayan-element:hover .bayan-img{
-    display: block;
+    max-height: 100vh;
 }
 
 .bayan-element:hover .xmark{
@@ -79,5 +82,5 @@ body{
 }
 
 .bayan-element:hover{
-    border-radius: 5%;
+    border-radius: 1em;
 }
