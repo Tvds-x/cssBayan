@@ -1,34 +1,43 @@
+a{
+    text-decoration:none;
+}
+
+a:visited{
+    color:black;
+}
+
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    background-color: blanchedalmond;
+    font-size: x-small;
 }
+
+.title{
+    font-size: 5em;
+    font-variant: small-caps;
+    color: rgb(82, 71, 55);
+}
+
 .main{
-    width: 60%;
+    width: 25%;
     margin: 0 auto;
-}
-.bayan-header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.bayan-{
-
 }
 
 .bayan-element{
     display: flex;
     flex-direction: column;
-    background-color: red;
-    border: 0.2em solid black;
+    border: 0.2em solid rgb(106, 31, 31);
+    margin-bottom: 1em;
 }
 
 .bayan-header{
-    background-color: aqua;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo{
-    margin-right: 2%;
-    margin-top: 2%;
+    margin-right: 4%;
 }
 
 .bayan-header .header{
@@ -37,6 +46,15 @@ body{
 
 .bayan-img {
     display: none;
+    border-radius: 5%;
+}
+
+.xmark{
+    display: none;
+}
+
+.arrow{
+    font-size: 3em;
 }
 
 #cat1:target,
@@ -46,15 +64,20 @@ body{
   display: block;
 }
 
-#cat1:hover,
-#cat2:hover,
-#cat3:hover,
-#cat4:hover {
-  display: block;
-}
 
 .bayan-element:hover .bayan-img{
     display: block;
 }
 
+.bayan-element:hover .xmark{
+    display: block;
+    font-size: 3em;
+}
 
+.bayan-element:hover .arrow{
+    display: none;
+}
+
+.bayan-element:hover{
+    border-radius: 5%;
+}
