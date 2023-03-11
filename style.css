@@ -1,10 +1,6 @@
-a{
-    text-decoration:none;
-}
-
-a:visited{
-    color:black;
-}
+input[type="radio"] {
+    display: none;
+  }
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -31,17 +27,19 @@ body{
     border-radius: 1em;
 }
 
-.bayan-header{
-    cursor: pointer;
+.element-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
+
+
 .logo{
     margin-right: 4%;
 }
 
-.bayan-header .header{
+.element-header .header{
     margin-left: 2%;
 }
 
@@ -50,37 +48,27 @@ body{
     overflow: hidden;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .xmark{
-    display: none;
-}
-
-.arrow{
     font-size: 3em;
+    transition: transform 0.4s ease;
+    transform: rotate(135deg);
 }
 
-#cat1:target,
-#cat2:target,
-#cat3:target,
-#cat4:target {
-    max-height: 100vh;
+input[type="radio"]:checked + label .bayan-img{
+    max-height:100vh;
 }
 
 .bayan-element:hover .bayan-img{
     max-height: 100vh;
 }
 
+input[type="radio"]:checked + label .xmark{
+    transform: rotate(0);
+}
+
 .bayan-element:hover .xmark{
-    display: block;
-    font-size: 3em;
-}
-
-.bayan-element:hover .arrow{
-    display: none;
-}
-
-.bayan-element:hover{
-    border-radius: 1em;
+    transform: rotate(0);
 }
