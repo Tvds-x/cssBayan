@@ -106,6 +106,9 @@ input[type="radio"]:checked + label .element-content{
         font-size: 0.8rem;
     }
     
+} 
+
+@media (hover:hover) { 
     .bayan-element:hover .icon{
         transform: rotate(0);
         opacity: 1;
@@ -119,7 +122,7 @@ input[type="radio"]:checked + label .element-content{
         opacity: 1;
     }
     
-        .bayan-element:hover .element-content{
+    .bayan-element:hover .element-content{
         max-height: 100vh;
         padding: 0 15%;
     }
